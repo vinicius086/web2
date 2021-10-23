@@ -18,32 +18,16 @@ public class weekToMonth extends HttpServlet {
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		response.setContentType("text/html;charset=UTF-8");
-		int tab1=Integer.parseInt(request.getParameter("tab1"));
-		int tab2=Integer.parseInt(request.getParameter("tab2"));
-		int aux;
-		if (tab1>tab2)
-		{
-			aux=tab1;
-			tab1=tab2;
-			tab2=aux;
-		}
+		int weeks=Integer.parseInt(request.getParameter("weeks"));
 		try (PrintWriter out = response.getWriter()) {
 			out.println("<!DOCTYPE html>");
 			out.println("<html>");
 			out.println("<head>");
-			out.println("<title>Servlet CalcularTabuadaComDoisNumeros</title>");
+			out.println("<title>Servlet weekToMonth</title>");
 			out.println("</head>");
 			out.println("<body>");
-			out.println("<h1>Servlet CalcularTabuadaComDoisNumeros2 at: " + request.getContextPath() + "</h1>");
-			while(tab1<=tab2) {
-				out.println("=========================<br/>");
-				out.println("Tabuada do número "+tab1+ "<br />");
-				out.println("=========================<br/>");
-				for(int i=0; i<=10; i++) {
-					out.println(tab1 + " x "+i+" = "+tab1*i+"<br />");
-				}
-				tab1++;
-			}
+			out.println("<h1>Servlet weekToMonth at: " + request.getContextPath() + "</h1>");
+			out.println("Gravida por "+weeks/4+ " meses e "+ weeks%4 +" semanas<br />");
 			out.println("</body>");
 			out.println("</html>");
 		}
