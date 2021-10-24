@@ -6,7 +6,7 @@ Neste repositório será depositada toda e qualquer atividade referente a tal ma
 
 
 ## Atividade módulo 1: Conversão de semanas de gestação em meses
-A primeira atividade foi nomeada em nosso workspace como "PregnancyCalculator"
-Dentro de src/main/java foi criado um pacote chamado serv, nele está contido nosso servlet
-Dentro de serv foi criado o servlet "weekToMonth.java", onde foi criada a função "processRequest", que recebe dados enviados por um HTML.
-Este HTML está em src/main/webapp com o nome de "weekToMonth.html", e é nesse arquivo onde está a "primeira" página de nossa aplicação, é por esse arquivo que a aplicação deve ser executada
+A primeira atividade foi nomeada em nosso workspace como "PregnancyCalculator".<br/>
+Dentro de src/main/java foi criado um pacote chamado serv, nele está contido nosso servlet.<br/>
+Dentro de serv foi criado o servlet "weekToMonth.java", onde foi criada a função "processRequest", que recebe dados enviados por um HTML.<br/>
+Este HTML está em src/main/webapp com o nome de "weekToMonth.html", e é nesse arquivo onde está a "primeira" página de nossa aplicação, é por esse arquivo que a aplicação deve ser executada.
