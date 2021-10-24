@@ -19,18 +19,20 @@ public class weekToMonth extends HttpServlet {
 			throws ServletException, IOException {
 		response.setContentType("text/html;charset=UTF-8");
 		int weeks=Integer.parseInt(request.getParameter("weeks"));
+	
 		try (PrintWriter out = response.getWriter()) {
 			out.println("<!DOCTYPE html>");
 			out.println("<html>");
 			out.println("<head>");
-			out.println("<title>Servlet weekToMonth</title>");
+			out.println("<title>Trabalho WEB 2</title>");
 			out.println("</head>");
 			out.println("<body>");
-			out.println("<h1>Servlet weekToMonth at: " + request.getContextPath() + "</h1>");
+			out.println("<h1>RESULTADO:</h1>");
 			out.println("Gravida por "+weeks/4+ " meses e "+ weeks%4 +" semanas<br />");
 			out.println("</body>");
 			out.println("</html>");
 		}
+		
 	}
     /**
      * @see HttpServlet#HttpServlet()
